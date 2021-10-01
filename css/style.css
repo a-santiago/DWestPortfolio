@@ -1,3 +1,10 @@
+:root{
+    --dw-primaryColor: #682473;
+    --dw-secondaryColor: #9D65A6;
+    --formFocusColor: var(--jp-secondaryColor);
+    --formFocusShaddowColor: rgba(173, 153, 216, .5);
+}
+
 .sticky-nav {
     position: fixed;
     left: 0;
@@ -7,6 +14,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.form-control:focus{
+    border-color: var(--formFocusColor);
+    box-shadow: 0 0 0 .25rem var(--formFocusShaddowColor);
 }
 
 .title {
